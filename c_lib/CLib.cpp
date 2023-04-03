@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-int hello_World()
+void hello_world()
 {
     printf("Hello World From C++\n");
-    return 420;
+    // return 420;
 }

@@ -1,3 +1,10 @@
+extern "C" {
+    pub fn hello_world();
+}
+
 fn main() {
-    println!("Hello, world!");
+    unsafe {
+        hello_world();
+    }
+    println!("Hello, world! From rust_main");
 }
