@@ -3,6 +3,13 @@
 version = 3
 
 [[package]]
+name = "c_interface"
+version = "0.1.0"
+dependencies = [
+ "cmake",
+]
+
+[[package]]
 name = "cc"
 version = "1.0.79"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -21,5 +28,5 @@ dependencies = [
 name = "rust_main"
 version = "0.1.0"
 dependencies = [
- "cmake",
+ "c_interface",
 ]

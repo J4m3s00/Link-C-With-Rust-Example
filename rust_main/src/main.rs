@@ -1,10 +1,7 @@
-extern "C" {
-    pub fn hello_world();
-}
+use c_interface::hello_world;
 
 fn main() {
-    unsafe {
-        hello_world();
-    }
     println!("Hello, world! From rust_main");
+    let x = hello_world();
+    println!("Got {}", x);
 }
